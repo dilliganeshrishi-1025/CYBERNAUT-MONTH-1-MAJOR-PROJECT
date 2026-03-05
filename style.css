@@ -1,0 +1,46 @@
+body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 0; padding: 0; background: #f8f9fa }
+header { margin-bottom: 20px }
+nav a { margin-right: 8px }
+ul { list-style: none; padding: 0 }
+li { margin-bottom: 8px }
+
+.container { padding-top: 20px }
+.table th, .table td { vertical-align: middle }
+
+/* Hero and background styles */
+.site-header .navbar { background: linear-gradient(90deg,#0f172a,#0b1220); }
+.hero {
+	min-height: 56vh;
+	display: flex;
+	align-items: center;
+	background-image: radial-gradient( circle at 10% 20%, rgba(99,102,241,0.18), transparent 12% ),
+										radial-gradient( circle at 90% 80%, rgba(16,185,129,0.12), transparent 12% ),
+										linear-gradient(180deg, rgba(15,23,42,0.92), rgba(10,14,22,0.85) );
+	background-blend-mode: screen, screen, normal;
+	color: white;
+	padding: 60px 0;
+}
+.hero .btn-outline-light { border-color: rgba(255,255,255,0.7); }
+
+.features .card { border: none; }
+.features .card .card-body { min-height: 140px }
+
+.cta { background: linear-gradient(90deg, rgba(14,165,233,0.12), rgba(99,102,241,0.08)); }
+
+/* decorative shapes */
+.hero::before {
+	content: '';
+	position: absolute;
+	left: -120px;
+	top: -60px;
+	width: 280px;
+	height: 280px;
+	background: radial-gradient(circle at 30% 30%, rgba(99,102,241,0.25), transparent 40%);
+	filter: blur(40px);
+	z-index: 0;
+}
+
+.hero .container { position: relative; z-index: 2 }
+
+footer { background: transparent }
+
